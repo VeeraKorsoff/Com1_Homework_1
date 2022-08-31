@@ -99,8 +99,22 @@ public class Main {
            System.out.println(result);
 
        // HW 9
-
-       //didn't understand
+        {
+            int t = 1;
+            int time = 1;
+            int highest = 0;
+            while (t >= 0 && t <= 100) {
+                int diff = t * (t - 20) * (t - 100) + 120000 - (t - 1) * (t - 21) * (t - 101) + 120000;
+                if (diff > highest) {
+                    highest = diff;
+                } else {
+                    highest = diff;
+                    time = t;}
+                t = t + 1;
+            }
+            System.out.println("time was " + time);
+            System.out.println("difference was " + highest);
+        }
 
        // HW 10
        boolean n = false;
